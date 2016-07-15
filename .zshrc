@@ -125,16 +125,17 @@ RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
 
 eval "$(rbenv init -)"
 
-#export PATH="$(brew --prefix josegonzalez/php/php55)/bin:/usr/local/scala-2.11.0/bin:$PATH"
-export PATH=/usr/local/play-2.2.2:/usr/local/scala-2.11.0/bin:$PATH
-export GOPATH=~/.go
+export GOPATH=~/go
+export PYENV_ROOT="$HOME/.pyenv"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$GOPATH/bin:$PYENV_ROOT/bin:$PATH"
+
 eval "$(rbenv init -)"
+eval "$(pyenv init -)"
 
 #suffix alias
 alias -s rb='ruby'
 alias -s php='php -f'
 alias -s html='google-chrome'
 alias -s txt='less'
-alias -s txt='go run'
+alias -s go='go run'
