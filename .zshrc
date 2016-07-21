@@ -123,8 +123,6 @@ PROMPT2="%{${fg[blue]}%}%_> %{${reset_color}%}"
 SPROMPT="%{${fg[red]}%}correct: %R -> %r [nyae]? %{${reset_color}%}"
 RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
 
-eval "$(rbenv init -)"
-
 export GOPATH=~/go
 export PYENV_ROOT="$HOME/.pyenv"
 
